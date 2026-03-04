@@ -5,21 +5,21 @@
 class Agentctl < Formula
   desc "Multi-agent control plane CLI"
   homepage "https://github.com/liangquanzhou/agentctl"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.1.1/agentctl_0.1.1_darwin_amd64.tar.gz"
-      sha256 "0bccea990149cbaaed201ba79c12dc54163b1e77a1792fe731480f2584ff55e9"
+      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.2.0/agentctl_0.2.0_darwin_amd64.tar.gz"
+      sha256 "49d12516d4c34358df698c4648faac59edaa3de8c22ece9e5b5c266ee42efbed"
 
       define_method(:install) do
         bin.install "agentctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.1.1/agentctl_0.1.1_darwin_arm64.tar.gz"
-      sha256 "f63d871a12e9a96d1355bf8353839fba25b4fce6c7d6c92ca0809ec67013d090"
+      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.2.0/agentctl_0.2.0_darwin_arm64.tar.gz"
+      sha256 "8fc93631d67c529a552fa77ba75381aa2b97ed2ec63b4bb121e2efae4cb6af6c"
 
       define_method(:install) do
         bin.install "agentctl"
@@ -29,15 +29,15 @@ class Agentctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.1.1/agentctl_0.1.1_linux_amd64.tar.gz"
-      sha256 "bf73a4185dfce41fb80bd1ce31f0608e8512bf0c0ab053d11bc1a50765459194"
+      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.2.0/agentctl_0.2.0_linux_amd64.tar.gz"
+      sha256 "28fc5468f8b1fe9663eef3a9740716b8c401c586a137d109886a1498e686119f"
       define_method(:install) do
         bin.install "agentctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.1.1/agentctl_0.1.1_linux_arm64.tar.gz"
-      sha256 "28ebfeab4847416f272c36da952fd2a6e7c6f386a8481d27d5980b972d1eb75c"
+      url "https://github.com/liangquanzhou/agentctl/releases/download/v0.2.0/agentctl_0.2.0_linux_arm64.tar.gz"
+      sha256 "518e062d26f503f16cfa752fc94c9a593f1dbebecfc1ee322c768c83f081a79b"
       define_method(:install) do
         bin.install "agentctl"
       end
