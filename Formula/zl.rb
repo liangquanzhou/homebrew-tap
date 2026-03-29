@@ -3,8 +3,8 @@ class Zl < Formula
 
   desc "Z-Library CLI - search and download ebooks from the terminal"
   homepage "https://github.com/liangquanzhou/zlib-cli"
-  url "https://github.com/liangquanzhou/zlib-cli/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "798caf8ca8b97f8cf2d58757da2615e121069c0c4667f5a981a3744eaa72d092"
+  url "https://github.com/liangquanzhou/zlib-cli/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "7f3cd06dcede52ceda713c290c0d5d45ee3a3a1f93674e47a1779c7908fc9776"
   license "MIT"
 
   depends_on "c-ares"
