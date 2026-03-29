@@ -7,6 +7,8 @@ class Zl < Formula
   sha256 "798caf8ca8b97f8cf2d58757da2615e121069c0c4667f5a981a3744eaa72d092"
   license "MIT"
 
+  depends_on "c-ares"
+  depends_on "cmake" => :build
   depends_on "python@3.13"
 
   uses_from_macos "libxml2"
