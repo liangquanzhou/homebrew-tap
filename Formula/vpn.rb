@@ -1,8 +1,8 @@
 class Vpn < Formula
   desc "OpenConnect VPN connection manager with DNS healing and route cleanup"
   homepage "https://github.com/liangquanzhou/vpn"
-  url "https://github.com/liangquanzhou/vpn/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "f96c281b10807192dfc4cc37021928434bc83dbe1fb77d94dff4f2cef4b82813"
+  url "https://github.com/liangquanzhou/vpn/archive/refs/tags/v1.0.2.tar.gz"
+  sha256 "ca54b67245d0622bd8bbcdf1f5d405fd45b2578050f8b59f5f2f58cfd85e8c1e"
   license "MIT"
 
   depends_on "openconnect"
