@@ -11,6 +11,12 @@ cask "gridspilot" do
 
   app "GridsPilot.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-d", "com.apple.quarantine", "#{appdir}/GridsPilot.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.gridspilot.app",
     "~/Library/Caches/com.gridspilot.app",
