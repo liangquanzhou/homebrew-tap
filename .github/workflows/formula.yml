@@ -1,0 +1,20 @@
+name: Formula
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Syntax check
+        run: ruby -c Formula/gws-switch.rb
+      - name: Tap current checkout
+        run: brew tap liangquanzhou/tap "$(pwd)"
+      - name: Install formula
+        run: brew install liangquanzhou/tap/gws-switch
+      - name: Test formula
+        run: brew test gws-switch

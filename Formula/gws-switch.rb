@@ -1,9 +1,9 @@
 class GwsSwitch < Formula
   desc "Multi-account wrapper for googleworkspace-cli"
   homepage "https://github.com/liangquanzhou/gws-switch"
-  url "https://github.com/liangquanzhou/gws-switch/releases/download/v0.1.1/gws-switch-0.1.1.tar.gz"
-  sha256 "496d5652332b8c05e27c83ebd5e308de297db5d343d5f2c3bf6ad2611f8e4a94"
-  version "0.1.1"
+  url "https://github.com/liangquanzhou/gws-switch/releases/download/v0.1.2/gws-switch-0.1.2.tar.gz"
+  sha256 "b763d216b12ab8e18fa48b683565b62262bbc0e5d619ec7a6cdcd79fc7055b71"
+  version "0.1.2"
   head "https://github.com/liangquanzhou/gws-switch.git", branch: "main"
 
   def install
@@ -27,6 +27,7 @@ class GwsSwitch < Formula
   end
 
   test do
-    assert_match "doctor: gws-switch", shell_output("#{bin}/gws-switch-doctor 2>&1")
+    assert_match "Usage:", shell_output("#{bin}/gws-switch --help")
+    assert_match "gws-switch 0.1.2", shell_output("#{bin}/gws-switch --version")
   end
 end
