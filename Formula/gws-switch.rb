@@ -1,9 +1,9 @@
 class GwsSwitch < Formula
   desc "Multi-account wrapper for googleworkspace-cli"
   homepage "https://github.com/liangquanzhou/gws-switch"
-  url "https://github.com/liangquanzhou/gws-switch/releases/download/v0.1.0/gws-switch-0.1.0.tar.gz"
-  sha256 "5db659076ced6d2aed46cc03d4b2a73c23646d6b64a9f7e9fdeef2d99228dbf0"
-  version "0.1.0"
+  url "https://github.com/liangquanzhou/gws-switch/releases/download/v0.1.1/gws-switch-0.1.1.tar.gz"
+  sha256 "496d5652332b8c05e27c83ebd5e308de297db5d343d5f2c3bf6ad2611f8e4a94"
+  version "0.1.1"
   head "https://github.com/liangquanzhou/gws-switch.git", branch: "main"
 
   def install
