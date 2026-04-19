@@ -4,8 +4,8 @@
 class Autotask < Formula
   desc "Personal macOS automation task registry and launchd manager"
   homepage "https://github.com/liangquanzhou/autotask"
-  url "https://codeload.github.com/liangquanzhou/autotask/tar.gz/refs/tags/v0.1.4"
-  sha256 "70df4e1fb05fc3e677854fe654fba2b17f34dc026cec3313715ed2fecadff0eb"
+  url "https://codeload.github.com/liangquanzhou/autotask/tar.gz/refs/tags/v0.1.5"
+  sha256 "c7102288d6eeeea9bedd7b742e21dcba8e7424e184d3eb1f5da84f96003631d9"
   license "MIT"
 
   depends_on "go" => :build
@@ -15,6 +15,6 @@ class Autotask < Formula
   end
 
   test do
-    assert_match "0.1.4", shell_output("#{bin}/autotask version")
+    assert_match "0.1.5", shell_output("#{bin}/autotask version")
   end
 end
