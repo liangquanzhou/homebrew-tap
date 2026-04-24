@@ -155,7 +155,11 @@ class Zl < Formula
   end
 
   def install
-    virtualenv_install_with_resources
+    # Homebrew 5.1+ defaults virtualenvs to --system-site-packages, which leaks
+    # the global pydantic/pydantic_core into yarl's optional import path. When
+    # those globals are version-mismatched, pydantic raises SystemError (not
+    # ImportError), bypassing yarl's try/except guard. Isolate the venv.
+    virtualenv_install_with_resources(system_site_packages: false)
   end
 
   test do
