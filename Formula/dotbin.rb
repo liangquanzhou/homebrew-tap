@@ -1,8 +1,8 @@
 class Dotbin < Formula
   desc "A collection of small macOS shell utilities"
   homepage "https://github.com/liangquanzhou/dotbin"
-  url "https://github.com/liangquanzhou/dotbin/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "636291b7689ef9fec5d2544b454987d9090db4279e6b442e6ccd106529835fe1"
+  url "https://github.com/liangquanzhou/dotbin/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "851d278e1047e09c5097af37dd119bfa80020fa7986c0b1cbe44e40cf594da43"
   license "MIT"
 
   def install
